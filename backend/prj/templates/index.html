@@ -24,7 +24,7 @@
         <script>
             var ws;
             $('#connect_button').click(function() {
-                ws = new WebSocket('ws://localhost:8787/market');
+                ws = new WebSocket('ws://localhost:8282/market');
                 ws.onmessage = function(event) {
                     console.log(event.data);
                 }
